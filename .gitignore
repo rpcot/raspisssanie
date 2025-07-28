@@ -1,0 +1,14 @@
+# environment
+.env
+
+# dependencies
+node_modules/
+
+# logs
+logs/*
+
+# .enigma
+.enigma/
+
+# other
+UPDATE.txt
