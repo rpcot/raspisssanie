@@ -1,4 +1,16 @@
 const { join, resolve } = require('node:path');
+require('dotenv').config();
+
+const {
+    TOKEN,
+    API_HOST,
+    API_PORT,
+    DB_HOST,
+    DB_PORT,
+    DB_NAME,
+    DB_USER,
+    DB_PASSWORD,
+} = process.env;
 
 module.exports = {
     token: TOKEN,

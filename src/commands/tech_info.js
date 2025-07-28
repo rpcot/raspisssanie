@@ -20,6 +20,9 @@ module.exports = {
         • Язык программирования: <code>JavaScript</code> (+ CSS, HTML)
         • Версия Node.js: <code>${process.version}</code>
         • База данных: <code>MySQL</code>
+
+        <b>📂 Репозиторий</b>
+        • https://github.com/rpcot/raspisssanie
         `.replace(/  +/g, '');
 
         await ctx.reply(text, {
