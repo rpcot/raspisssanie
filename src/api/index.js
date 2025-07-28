@@ -114,14 +114,14 @@ const upload = multer();
 
 app.use(express.json());
 
-// app.use(cors({
-//     origin: 'https://schedule.rpcot.ru',
-//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-// }));
 app.use(cors({
-    origin: 'http://127.0.0.1:3000',
+    origin: 'https://schedule.rpcot.ru',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
+// app.use(cors({
+//     origin: 'http://127.0.0.1:3000',
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
+// }));
 
 app.get('/', (req, res) => {
     res.status(200).json({ ok: true, status: 200, message: 'OK' });
