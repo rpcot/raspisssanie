@@ -69,7 +69,7 @@ yarn install
 yarn start
 ```
 
-4. Запустить API (сайт):  
+4. Запустить API:  
 ```bash
 yarn api-start
 ```
