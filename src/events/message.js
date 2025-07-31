@@ -123,6 +123,7 @@ module.exports = {
 
                     await ctx.reply(`💖 <b>Спасибо за обратную связь</b>, твоё сообщение <b>отправлено</b> разработчику.\nВ случае чего, разработчик свяжется с тобой <b>в ЛС</b>.`, {
                         parse_mode: 'HTML',
+                        message_effect_id: '5159385139981059251',
                         reply_parameters: {
                             message_id: ctx.msg.message_id,
                         },

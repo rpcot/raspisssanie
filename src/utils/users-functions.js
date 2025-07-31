@@ -126,6 +126,7 @@ async function answerGoAdminRequest(ctx, action, targetUserId) {
             });
 
             await ctx.api.sendMessage(targetUserId, `<b>Привет!</b> Твой запрос на получение <b>админ прав</b> одобрен, теперь ты <b>можешь посмотреть</b> доступные команды с помощью <b>/help</b>.\n💖 Спасибо за помощь!`, {
+                message_effect_id: '5104841245755180586',
                 parse_mode: 'HTML',
             })
                 .catch(() => { });

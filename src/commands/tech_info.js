@@ -7,7 +7,7 @@ module.exports = {
         const text = `
         <b>🤖 Бот</b>
         • Разработчик: <a href="https://t.me/rpcotik">@rpcotik</a>
-        • Версия бота: <code>v1.1.0</code>
+        • Версия бота: <code>v1.1.1</code>
         • Последнее обновление: <code>01.09.2025</code>
 
         <b>🌐 Сайт и API</b>

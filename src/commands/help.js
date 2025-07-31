@@ -1,3 +1,4 @@
+const { Keyboard } = require("grammy");
 const { getUserData } = require("../utils/users-functions");
 
 module.exports = {
@@ -20,6 +21,17 @@ module.exports = {
         <b>🛠️ Административные</b>
         `.replace(/  +/g, '');
 
+        const keyboard = new Keyboard()
+            .text('📅 Расписание на сегодня')
+            .text('📅 Расписание на завтра')
+            .row()
+            .text('🌐 Сайт бота')
+            .row()
+            .text('🚀 Стать админом')
+            .text('💖 Обратная связь')
+            .row()
+            .resized();
+
         const userdata = await getUserData(ctx.from.id);
 
         if (userdata.group === 'admin' || userdata.group === 'developer') {
@@ -39,6 +51,7 @@ module.exports = {
 
         await ctx.reply(text, {
             parse_mode: 'HTML',
+            reply_markup: keyboard,
         });
 
     }

@@ -53,6 +53,8 @@ module.exports = {
         await ctx.reply(text, {
             parse_mode: 'HTML',
             reply_markup: keyboard,
+            message_effect_id: '5104841245755180586',
+            disable_web_page_preview: true,
         });
 
         await sendActionLog(ctx, `Бот запущен`);
